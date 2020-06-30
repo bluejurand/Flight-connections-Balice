@@ -1,0 +1,17 @@
+CREATE TABLE air_traffic_data_2019_2020(
+	CALLSIGN varchar,
+	NMB varchar,
+	ICAO24 varchar,
+	TYPECODE varchar,
+	ORIGIN varchar,
+	DESTINATION varchar,
+	FIRSTSEEN timestamp,
+	LASTSEEN timestamp,
+	DATE timestamp,
+	LATITUDE_1 decimal(9, 6),
+	LONGITUDE_1 decimal(9, 6),
+	ALTITUDE_1 decimal(9, 6),
+	LATITUDE_2 decimal(9, 6),
+	LONGITUDE_2 decimal(9, 6),
+	ALTITUDE_2 decimal(9, 6),
+	ZIP char(5));
