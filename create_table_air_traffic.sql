@@ -8,7 +8,7 @@ CREATE TABLE air_traffic_data_2019_2020(
 	DESTINATION varchar,
 	FIRSTSEEN varchar,
 	LASTSEEN varchar,
-	"DATE" varchar,
+	FLIGHT_DATE varchar,
 	LATITUDE_1 float8,
 	LONGITUDE_1 float8,
 	ALTITUDE_1 float8,
