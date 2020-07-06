@@ -8,11 +8,12 @@
 ![Tensorflow 2.1.0](https://img.shields.io/badge/tensorflow-2.1.0-orange) 
 ![Scikit-image 0.16.2](https://img.shields.io/badge/scikit--image-0.16.2-yellowgreen)  
 
+This repository presents flights to and from Balice Airport (Airport located near Kraków - https://en.wikipedia.org/wiki/Krak%C3%B3w_John_Paul_II_International_Airport).
 
 
 
 ## Motivation
-
+Pracitce Structured Query Language, work with Geospatial Data using PostGIS.
 
 
 ## Installation
@@ -23,9 +24,13 @@
 
 
 ## Key Concepts
+__SQL__
 
+__GIS__
 
+__PostGIS__
 
+__QGIS__
 
 ## Summary  
 
