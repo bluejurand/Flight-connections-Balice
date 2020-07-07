@@ -4,8 +4,7 @@ DECLARE
     file_name VARCHAR := '';
 BEGIN
 	file_directory := 'C:/Users/Public/Documents/air_traffic/';
-	file_name := 'flightlist_20190101_20190131.csv';
-	FOR file_name IN SELECT * FROM pg_ls_dir('C:/Users/Public/Documents/air_traffic/') LOOP
+	FOR file_name IN SELECT * FROM pg_ls_dir(format('%s', file_directory)) LOOP
 		EXECUTE format('COPY air_traffic_data_2019_2020 FROM ''%s%s'' WITH CSV HEADER;', file_directory, file_name);
     END LOOP;
 END; $$;
