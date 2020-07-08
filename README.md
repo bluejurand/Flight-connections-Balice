@@ -20,7 +20,24 @@ pandemic to air traffic on the basis of flights to and from regional European ai
 
 ## Installation
 
+__Installing PostgreSQL__  
+PostgreSQL is a requirement (PostgreSQL 4.21 or greater). Recommended enviroment is EDB Postgres to install PostgreSQL (https://www.enterprisedb.com/downloads/postgresql).
 
+__Installing PostGIS__  
+PostGIS  is an open source software program that adds support for geographic objects to the PostgreSQL object-relational database [1].
+Process of installation is described [here](https://postgis.net/install/ "PostGIS-Installation").
+To enable PostGIS functionality execute following SQL commands.  
+  
+	CREATE EXTENSION postgis;
+	CREATE EXTENSION postgis_topology;
+
+__Installing QGIS__  
+To install QGIS download from following [link](https://www.qgis.org/pl/site/forusers/download.html).
+QGIS is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing,
+editing, and analysis of geospatial data [2]. Exemplary QGIS interface screenshot below. In this project QGIS was used to create a world map
+and visualise flights with animation. Documentation for QGIS is located [here](https://docs.qgis.org/3.10/en/docs/index.html).
+ 
+![QGIS 3.12 interface](https://github.com/bluejurand/Flight-connections-Balice/tree/master/QGIS_3.12_interface.jpg =650x300) 
 
 ## Code examples
 
@@ -58,4 +75,5 @@ __Civil aviation__
 
 
 ## Resources
-[1] 
+[1] https://en.wikipedia.org/wiki/PostGIS
+[2] https://en.wikipedia.org/wiki/QGIS
