@@ -37,7 +37,7 @@ QGIS is a free and open-source cross-platform desktop geographic information sys
 editing, and analysis of geospatial data [2]. Exemplary QGIS interface screenshot below. In this project QGIS was used to create a world map
 and visualise flights with animation. Documentation for QGIS is located [here](https://docs.qgis.org/3.10/en/docs/index.html).
  
-![QGIS 3.12 interface](https://github.com/bluejurand/Flight-connections-Balice/tree/master/QGIS_3.12_interface.jpg =650x300)
+![QGIS 3.12 interface](https://github.com/bluejurand/Flight-connections-Balice/tree/master/QGIS_3.12_interface.jpg)
 <img src="https://github.com/bluejurand/Flight-connections-Balice/tree/master/QGIS_3.12_interface.jpg"  width="650" height="300"> 
 
 ## Code examples
