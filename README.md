@@ -12,7 +12,9 @@ application that supports viewing, editing, and analysis of geospatial data).
 
 
 ## Motivation
-Pracitce Structured Query Language, work with Geospatial Data using PostGIS.
+Pracitce Structured Query Language, work with Geospatial Data using PostGIS. Visualise impact of
+[COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019 "Coronavirus disease 2019")
+pandemic to air traffic on the basis of flights to and from regional European airport.
 
 
 ## Installation
