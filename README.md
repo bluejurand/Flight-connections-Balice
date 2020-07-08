@@ -3,7 +3,8 @@
 ![PostGIS 3.0.1](https://img.shields.io/badge/PostGIS-3.0.1-lightblue) 
 ![QGIS 3.12.3](https://img.shields.io/badge/QGIS-3.12.3-green)  
 
-![Balice flights](https://github.com/bluejurand/Flight-connections-Balice/tree/master/animation/Balice_flights_2019_2020.gif)  
+![Balice flights](https://github.com/bluejurand/Flight-connections-Balice/tree/master/animation/Balice_flights_2019_2020.gif)
+<img src="https://github.com/bluejurand/Flight-connections-Balice/tree/master/animation/Balice_flights_2019_2020.gif"  width="800" height="268">  
 
 This repository presents flights to and from
 [Balice Airport](https://en.wikipedia.org/wiki/Krak%C3%B3w_John_Paul_II_International_Airport "Kraków John Paul II International Airport")
@@ -38,7 +39,7 @@ editing, and analysis of geospatial data [2]. Exemplary QGIS interface screensho
 and visualise flights with animation. Documentation for QGIS is located [here](https://docs.qgis.org/3.10/en/docs/index.html).
  
 ![QGIS 3.12 interface](https://github.com/bluejurand/Flight-connections-Balice/tree/master/QGIS_3.12_interface.jpg)
-<img src="https://github.com/bluejurand/Flight-connections-Balice/tree/master/QGIS_3.12_interface.jpg"  width="650" height="300"> 
+<img src="https://github.com/bluejurand/Flight-connections-Balice/tree/master/QGIS_3.12_interface.jpg"  width="650" height="300">  
 
 ## Code examples
 
