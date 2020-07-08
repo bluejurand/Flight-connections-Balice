@@ -50,6 +50,10 @@ __PostGIS__
 
 __QGIS__
 
+__COVID-19__
+
+__Civil aviation__
+
 ## Summary  
 
 
