@@ -18,21 +18,31 @@ WHERE flight_date >= '2019-01-01' AND flight_date < '2019-02-01';
 
 CREATE TABLE monthly_flights_number
 AS
-SELECT to_char(date_trunc('month', flight_date::date), 'YYYY-MM') as "year_month", count(*) as flights_number
+SELECT to_char(date_trunc('month', flight_date::date), 'YYYY') as "year", to_char(date_trunc('month', flight_date::date), 'MM') as "month",
+count(*) as flights_number
 FROM balice_flights_2019_2020
 WHERE flight_date >= '2019-01-01' AND flight_date < '2019-05-21'
-GROUP BY "year_month"
-ORDER BY "year_month";
+GROUP BY "year", "month"
+ORDER BY "year", "month";
 
 INSERT INTO monthly_flights_number
-SELECT to_char(date_trunc('month', flight_date::date), 'YYYY-MM') as "year_month", count(*) as flights_number
+SELECT to_char(date_trunc('month', flight_date::date), 'YYYY') as "year", to_char(date_trunc('month', flight_date::date), 'MM') as "month",
+count(*) as flights_number
 FROM balice_flights_2019_2020
 WHERE flight_date >= '2020-01-01' AND flight_date < '2020-06-01'
-GROUP BY "year_month"
-ORDER BY "year_month";
+GROUP BY "year", "month"
+ORDER BY "year", "month";
 
 INSERT INTO monthly_flights_number
 VALUES
-	('2020-05', 0);
-
+	('2020', '05', 0);
+/*
+CREATE TABLE monthly_flights_percentage
+AS
+SELECT SUBSTRING(year_month, 6, 7) as "month", SUBSTRING(year_month, 1, 4) as "year"
+FROM monthly_flights_number
+--WHERE flight_date >= '2019-01-01' AND flight_date < '2019-05-21'
+GROUP BY "month"
+ORDER BY "month";
+*/
 SELECT * FROM monthly_flights_number;
