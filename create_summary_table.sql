@@ -15,18 +15,24 @@ FROM balice_flights_2019_2020
 WHERE flight_date >= '2019-01-01' AND flight_date < '2019-02-01';
 */
 --SELECT EXTRACT(MONTH FROM TIMESTAMP '2001-02-16 20:38:40');
-/*
-CREATE TABLE test
+
+CREATE TABLE monthly_flights_number
 AS
-SELECT date_trunc('month', flight_date::date) as mon, count(*)
+SELECT to_char(date_trunc('month', flight_date::date), 'YYYY-MM') as "year_month", count(*) as flights_number
 FROM balice_flights_2019_2020
-WHERE flight_date >= '2019-01-01' AND flight_date < '2019-07-01'
-GROUP BY mon
-ORDER BY mon;
-*/
-INSERT INTO test
-SELECT date_trunc('month', flight_date::date) as mon, count(*)
+WHERE flight_date >= '2019-01-01' AND flight_date < '2019-05-21'
+GROUP BY "year_month"
+ORDER BY "year_month";
+
+INSERT INTO monthly_flights_number
+SELECT to_char(date_trunc('month', flight_date::date), 'YYYY-MM') as "year_month", count(*) as flights_number
 FROM balice_flights_2019_2020
-WHERE flight_date >= '2020-01-01' AND flight_date < '2020-07-01'
-GROUP BY mon
-ORDER BY mon;
+WHERE flight_date >= '2020-01-01' AND flight_date < '2020-06-01'
+GROUP BY "year_month"
+ORDER BY "year_month";
+
+INSERT INTO monthly_flights_number
+VALUES
+	('2020-05', 0);
+
+SELECT * FROM monthly_flights_number;
