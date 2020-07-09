@@ -15,7 +15,7 @@ FROM balice_flights_2019_2020
 WHERE flight_date >= '2019-01-01' AND flight_date < '2019-02-01';
 */
 --SELECT EXTRACT(MONTH FROM TIMESTAMP '2001-02-16 20:38:40');
-
+/*
 CREATE TABLE monthly_flights_number
 AS
 SELECT to_char(date_trunc('month', flight_date::date), 'YYYY') as "year", to_char(date_trunc('month', flight_date::date), 'MM') as "month",
@@ -36,6 +36,7 @@ ORDER BY "year", "month";
 INSERT INTO monthly_flights_number
 VALUES
 	('2020', '05', 0);
+*/
 /*
 CREATE TABLE monthly_flights_percentage
 AS
@@ -44,5 +45,28 @@ FROM monthly_flights_number
 --WHERE flight_date >= '2019-01-01' AND flight_date < '2019-05-21'
 GROUP BY "month"
 ORDER BY "month";
+
+SELECT yyyy,    
+       weather,
+       mon,
+       lead( weather ) over (partition by mon order by mon, yyyy desc),
+       weather / lead( weather ) over (partition by mon order by mon, yyyy desc)
+FROM joy
 */
-SELECT * FROM monthly_flights_number;
+
+CREATE TABLE monthly_flights_percentage
+AS
+SELECT "year", 
+       "month",
+       flights_number,
+       lead(flights_number) over (partition by "month" order by "month", "year" desc),
+       round((flights_number/((lead(flights_number) over (partition by "month" order by "month", "year" desc))*1.0)-1.0)*100, 2)
+FROM monthly_flights_number;
+
+ALTER TABLE monthly_flights_percentage
+ADD COLUMN id SERIAL PRIMARY KEY;
+
+DELETE FROM monthly_flights_percentage WHERE id % 2 = 0;
+
+SELECT concat('2020/2019-', "month"), round
+FROM monthly_flights_percentage;
