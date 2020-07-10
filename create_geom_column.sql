@@ -7,5 +7,7 @@ UPDATE balice_flights_2019_2020
 SET flights_trajectories =  
   (ST_Segmentize(
   (ST_MakeLine(origin_geom, destination_geom)::geography)
-  ,100000)::geometry)
-;
+  ,100000)::geometry);
+ALTER TABLE balice_flights_2019_2020 ADD COLUMN flight_length numeric;
+UPDATE balice_flights_2019_2020 SET flight_length = ST_Distance(ST_MakePoint(longitude_1, latitude_1)::geography,
+																ST_MakePoint(longitude_2, latitude_2)::geography);
