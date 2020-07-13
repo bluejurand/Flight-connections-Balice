@@ -85,3 +85,15 @@ SELECT * FROM
 ) a
 
 WHERE rank = 1;
+
+SELECT * FROM 
+(
+SELECT
+	origin,
+	destination,
+	flight_length,
+	rank() over (ORDER BY flight_length DESC)
+FROM balice_flights_2019_2020
+) a
+
+WHERE rank = 1;
