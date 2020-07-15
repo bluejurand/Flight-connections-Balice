@@ -14,7 +14,7 @@ This repository presents flights to and from
 
 
 ## Balice airport general characteristics
-![Balice general infographic](https://github.com/bluejurand/Flight-connections-Balice/tree/master/work-airport-infographic/Balice_general_infographic.gif)
+![Balice general infographic](https://github.com/bluejurand/Flight-connections-Balice/tree/master/work-airport-infographic/Balice_general_infographic.png)
 
 ## Motivation
 Pracitce Structured Query Language, work with Geospatial Data using PostGIS. Visualise impact of
