@@ -13,6 +13,9 @@ This repository presents flights to and from
 (open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data).
 
 
+## Balice airport general characteristics
+![Balice general infographic](https://github.com/bluejurand/Flight-connections-Balice/tree/master/work-airport-infographic/Balice_general_infographic.gif)
+
 ## Motivation
 Pracitce Structured Query Language, work with Geospatial Data using PostGIS. Visualise impact of
 [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019 "Coronavirus disease 2019")
