@@ -78,19 +78,12 @@ __COVID-19__
 __Civil aviation__
 
 ## Summary  
+PostGIS feauters enables to work with geographic data for PostgreSQL. Thanks to that tabularized geographic data can be transformed and analyzed.
+Taking that into account from world flights data were extracted infromations for Kraków airport. Subsequenlty to visualize air connections the
+QGIS deskopt was used. Presented GIF animation reveals the drastic decline in number of flights as a result of COVID-19 pandemic situation, which
+caused flights suspension around the world. To present it in numbers the below table was generated. It shows that steady increase in number of
+flights number between year 2019 and 2020 was interuptted by the Coronavirus.
 
-| year | month | flights_number |
-|------|-------|----------------|
-| 2019 | 01    | 1002           |
-| 2019 | 02    | 768            |
-| 2019 | 03    | 362            |
-| 2019 | 04    | 158            |
-| 2019 | 05    | 37             |
-| 2020 | 01    | 1333           |
-| 2020 | 02    | 1361           |
-| 2020 | 03    | 553            |
-| 2020 | 04    | 1              |
-| 2020 | 05    | 0              |
 
 | 2020/2019_month | connections_change_[%] |
 |-----------------|------------------------|
