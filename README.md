@@ -8,7 +8,7 @@
 
 This repository presents flights to and from
 [Balice Airport](https://en.wikipedia.org/wiki/Krak%C3%B3w_John_Paul_II_International_Airport "Kraków John Paul II International Airport")
-(Airport located near Kraków) since the beging of 2019 till May 2020. Data was extracted with use of PostgreSQL and PostGIS
+(Airport located near Kraków) since the beging of 2019 till May 2020. Data [3] was extracted with use of PostgreSQL and PostGIS
 (extension which that adds support for geographic objects to the PostgreSQL). Subsequently qnimation was created in QGIS
 (open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data).
 
@@ -16,7 +16,7 @@ This repository presents flights to and from
 ## Balice airport general characteristics
 ![Balice general infographic](https://github.com/bluejurand/Flight-connections-Balice/tree/master/work-airport-infographic/Balice_general_infographic.png)
 <img src="https://github.com/bluejurand/Flight-connections-Balice/tree/master/work-airport-infographic/Balice_general_infographic.png"  width="800" height="626"> 
-
+Source image link: <a href="http://www.freepik.com">Designed by macrovector / Freepik</a>
 ## Motivation
 Pracitce Structured Query Language, work with Geospatial Data using PostGIS. Visualise impact of
 [COVID-19](https://en.wikipedia.org/wiki/Coronavirus_disease_2019 "Coronavirus disease 2019")
@@ -95,4 +95,5 @@ flights number between year 2019 and 2020 was interuptted by the Coronavirus.
 
 ## Resources
 [1] https://en.wikipedia.org/wiki/PostGIS  
-[2] https://en.wikipedia.org/wiki/QGIS
+[2] https://en.wikipedia.org/wiki/QGIS  
+[3] https://zenodo.org/record/3901482  
