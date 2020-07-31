@@ -1,8 +1,10 @@
+
 SELECT round(AVG(montlhy_flights.montlhy_flights_count), 2) FROM
 	(SELECT count(*) as montlhy_flights_count
 	FROM balice_flights_2019_2020
 	GROUP BY SUBSTRING(flight_date, 1, 7)) montlhy_flights;
 
+--EXPLAIN (FORMAT JSON)
 SELECT * FROM 
 (
     SELECT
@@ -12,7 +14,7 @@ SELECT * FROM
     FROM balice_flights_2019_2020
     WHERE origin != 'EPKK'
     GROUP BY origin
-) a
+) a;
 
 WHERE rank = 1;
 
