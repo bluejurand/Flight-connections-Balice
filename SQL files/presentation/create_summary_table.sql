@@ -33,7 +33,8 @@ FROM monthly_flights_number;
 ALTER TABLE monthly_flights_percentage
 ADD COLUMN id SERIAL PRIMARY KEY;
 
-DELETE FROM monthly_flights_percentage WHERE id % 2 = 0;
+DELETE FROM monthly_flights_percentage
+WHERE "connections_change_[%]" = 0 OR "connections_change_[%]" is NULL;
 
 ALTER TABLE monthly_flights_percentage
 DROP COLUMN "id",
