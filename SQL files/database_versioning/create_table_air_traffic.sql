@@ -15,3 +15,4 @@ CREATE TABLE air_traffic_data_2019_2020(
 	LATITUDE_2 float8,
 	LONGITUDE_2 float8,
 	ALTITUDE_2 float8);
+CREATE INDEX org_dest_idx ON air_traffic_data_2019_2020 (ORIGIN, DESTINATION);
